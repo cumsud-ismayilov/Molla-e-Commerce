@@ -1,0 +1,1042 @@
+header {
+
+    .head-top {
+        background-color: #f8f8f8;
+        padding-top: 5px;
+        padding-right: 65px;
+        width: 100%;
+        height: 41px;
+
+        .container {
+            .row {
+                display: flex;
+                align-items: baseline;
+
+                .head-left {
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: center;
+                    gap: 2px;
+
+                    p {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 15px;
+                        color: #777;
+                        font-weight: 400;
+                    }
+
+                    h5 {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 15px;
+                        color: #777;
+                        font-weight: 400;
+                        transition: .3s ease-in-out;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #a6c76c;
+                        }
+                    }
+                }
+
+                .head-right {
+                    ul {
+                        display: flex;
+                        list-style: none;
+                        justify-content: flex-end;
+                        gap: 42px;
+
+                        .main-li {
+                            display: flex;
+                            font-size: 14px;
+                            align-items: center;
+                            gap: 4px;
+                            color: #777;
+                            transition: .3s ease-in-out;
+                            cursor: pointer;
+                            position: relative;
+
+                            &:hover {
+                                color: #a6c76c;
+                            }
+
+                            i {
+                                font-size: 9px;
+                            }
+
+                            .main-ul {
+                                display: block;
+                                background-color: #fff;
+                                box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
+                                position: absolute;
+                                top: 36px;
+                                padding-top: 2px;
+                                padding-bottom: 3px;
+                                padding-left: 9px;
+                                width: 42px;
+                                // opacity: 0;
+                                visibility: hidden;
+                                transition: .3s ease-in-out;
+
+                                .hover {
+                                    color: #777;
+
+                                    &:hover {
+                                        color: #a6c76c;
+                                    }
+                                }
+                            }
+
+                            &:hover {
+                                .main-ul {
+                                    // opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+
+
+
+                        }
+
+                        .eng-li {
+                            display: flex;
+                            font-size: 14px;
+                            align-items: center;
+                            gap: 4px;
+                            color: #777;
+                            transition: .3s ease-in-out;
+                            cursor: pointer;
+                            position: relative;
+
+                            &:hover {
+                                color: #a6c76c;
+                            }
+
+                            i {
+                                font-size: 9px;
+                            }
+
+                            .lang {
+                                display: block;
+                                background-color: #fff;
+                                box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
+                                position: absolute;
+                                top: 36px;
+                                padding-top: 4px;
+                                padding-bottom: 5px;
+                                padding-left: 11px;
+                                width: 69px;
+                                // opacity: 0;
+                                visibility: hidden;
+                                z-index: 1;
+                                transition: .3s ease-in-out;
+
+                                .lang-li {
+                                    color: #777;
+
+                                    &:hover {
+                                        color: #a6c76c;
+                                    }
+                                }
+                            }
+
+                            &:hover {
+                                .lang {
+                                    // opacity: 1;
+                                    visibility: visible;
+
+                                }
+                            }
+
+
+
+                        }
+
+
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        .head-mid {
+            .container {
+                .row {
+                    border-bottom: 1px solid lightgray;
+
+                    .head-left {
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center;
+
+                        img {
+                            width: 109px;
+                            height: 26px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .head-center {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        position: relative;
+
+                        input {
+                            width: 529px;
+                            padding: 6px;
+                            margin-top: -5px;
+                            font-family: 'Poppins', sans-serif;
+                            border: 1px solid #dadada;
+                        }
+
+                        i {
+                            position: absolute;
+                            top: 2px;
+                            right: 7px;
+                            color: #666;
+                            transition: .3s ease-in-out;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: #a6c76c;
+                            }
+                        }
+                    }
+
+                    .header-right {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 36px;
+
+                        .account,
+                        .wish,
+                        .cart {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            cursor: pointer;
+
+                            i {
+                                font-size: 25px;
+                                color: #333;
+                                line-height: 1;
+                                transition: .3s ease-in-out;
+                                cursor: pointer;
+
+                                &:hover {
+                                    color: #a6c76c;
+                                }
+                            }
+
+                            p {
+                                color: #777;
+                                font-weight: 300;
+                                font-size: 13px;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                        }
+
+                        .wish {
+                            position: relative;
+
+                            h6 {
+                                background-color: #a6c76c;
+                                color: #fff;
+                                font-weight: 400;
+                                font-size: 11px;
+                                padding: 0.25em 0.4em;
+                                border-radius: 50%;
+                                line-height: 1;
+                                position: absolute;
+                                top: -5px;
+                                left: 26px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: end;
+                                width: 16px;
+                            }
+                        }
+
+                        .cart {
+                            position: relative;
+                            transition: .3s ease-in-out;
+
+                            h6 {
+                                background-color: #a6c76c;
+                                color: #fff;
+                                font-weight: 400;
+                                font-size: 11px;
+                                padding: 0.25em 0.4em;
+                                border-radius: 50%;
+                                line-height: 1;
+                                position: absolute;
+                                top: -3px;
+                                left: 15px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: end;
+                                width: 16px;
+                            }
+
+                            .card-menu {
+                                padding: 31px 29px 13px;
+                                display: flex;
+                                align-items: flex-start;
+                                position: absolute;
+                                top: 62px;
+                                right: 0;
+                                box-shadow: 5px 10px 16px rgb(51 51 51 / 5%), -5px 10px 16px rgb(51 51 51 / 5%);
+                                background-color: #fff;
+                                width: 329px;
+                                border: none;
+                                height: 313px;
+                                flex-direction: column;
+                                gap: 12px;
+                                visibility: hidden;
+                                z-index: 1;
+
+                                .shoes-card {
+                                    display: flex;
+                                    border-bottom: 1px solid lightgray;
+                                    padding-bottom: 11px;
+
+                                    .shoes-text {
+                                        h4 {
+                                            color: #666;
+                                            font-size: 18px;
+                                            font-weight: 400;
+                                            margin-bottom: 0;
+                                            cursor: pointer;
+                                            transition: .3s ease-in-out;
+
+                                            &:hover {
+                                                color: #a6c76c;
+                                            }
+                                        }
+
+                                        span {
+                                            color: #999999;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                        }
+                                    }
+
+                                    .shoes-img {
+                                        width: 81px;
+                                        height: 60px;
+                                        position: relative;
+
+                                        img {
+                                            width: 100%;
+                                            object-fit: cover;
+                                            object-position: center;
+                                        }
+
+                                        .fa-xmark {
+                                            color: #cccccc;
+                                            font-size: 14px;
+                                            font-weight: 600;
+                                            position: absolute;
+                                            line-height: 1;
+                                            right: -16px;
+                                            bottom: 21px;
+                                            transition: .3s ease-in-out;
+
+                                            &:hover {
+                                                color: #212529;
+                                            }
+                                        }
+                                    }
+
+                                }
+
+                                .dress-card {
+                                    display: flex;
+                                    border-bottom: 1px solid lightgray;
+                                    padding-bottom: 11px;
+
+                                    .dress-text {
+                                        h4 {
+                                            color: #666;
+                                            font-size: 18px;
+                                            font-weight: 400;
+                                            margin-bottom: 0;
+                                            cursor: pointer;
+                                            transition: .3s ease-in-out;
+
+                                            &:hover {
+                                                color: #a6c76c;
+                                            }
+                                        }
+
+                                        span {
+                                            color: #999999;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                        }
+                                    }
+
+                                    .dress-img {
+                                        width: 81px;
+                                        height: 60px;
+                                        position: relative;
+
+                                        img {
+                                            width: 100%;
+                                            object-fit: cover;
+                                            object-position: center;
+                                        }
+
+                                        .fa-xmark {
+                                            color: #cccccc;
+                                            font-size: 14px;
+                                            font-weight: 600;
+                                            position: absolute;
+                                            line-height: 1;
+                                            right: -16px;
+                                            bottom: 21px;
+                                            transition: .3s ease-in-out;
+
+                                            &:hover {
+                                                color: #212529;
+                                            }
+                                        }
+                                    }
+
+                                }
+
+                                .total-text {
+                                    display: flex;
+                                    align-items: baseline;
+                                    width: 271px;
+                                    justify-content: space-between;
+
+                                    h4 {
+                                        text-transform: uppercase;
+                                        font-size: 20px;
+                                        font-weight: 500;
+                                        letter-spacing: 1px;
+                                        font-family: 'Poppins', sans-serif;
+                                        color: #666666;
+                                    }
+
+                                    span {
+                                        text-transform: uppercase;
+                                        color: #666666;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                    }
+                                }
+
+                                .card-btn {
+                                    display: flex;
+                                    width: 274px;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    .button-1 {
+                                        color: #fff;
+                                        background-color: #a6c76c;
+                                        border-color: transparent;
+                                        box-shadow: none;
+                                        padding: 5px 14px;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        font-family: 'Poppins', sans-serif;
+                                        cursor: pointer;
+                                        transition: .3s ease-in-out;
+                                        filter: brightness(1);
+
+                                        &:hover {
+                                            filter: brightness(0.8);
+                                        }
+                                    }
+
+                                    .button-2 {
+                                        color: #a6c76c;
+                                        background-color: transparent;
+                                        border-color: #a6c76c;
+                                        padding: 5px 14px;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        font-family: 'Poppins', sans-serif;
+                                        cursor: pointer;
+                                        transition: .3s ease-in-out;
+
+                                        &:hover {
+                                            color: #fff;
+                                            background-color: #a6c76c;
+                                            border: transparent;
+
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .cart:hover {
+                            .card-menu {
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .head-end {
+            .container {
+                .row {
+                    .browse-menu {
+                        cursor: pointer;
+                        color: #333;
+
+                        padding-top: 4px;
+                        transition: .3s ease-in-out;
+
+                        &:hover {
+                            background-color: #a6c76c;
+                            color: #fff;
+
+                        }
+
+                        .browse {
+                            display: flex;
+                            align-items: flex-end;
+                            gap: 9px;
+                            justify-content: center;
+                            position: relative;
+                            padding-bottom: 13px;
+
+                            i {
+                                font-size: 23px;
+                                // &:hover{
+                                //     color: #fff;
+                                // }
+                            }
+
+                            h4 {
+                                // color: #333;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 15px;
+                                font-weight: 500;
+                                line-height: 1;
+                                cursor: pointer;
+                                transition: .3s ease-in-out;
+
+                                // &:hover{
+                                //     color: #fff;
+                                // }
+
+
+                            }
+
+                            .browse-drop {
+                                position: absolute;
+                                left: -12px;
+                                top: 46px;
+                                background-color: #fff;
+                                box-shadow: 0 10px 30px rgb(0 0 0 / 5%);
+                                list-style: none;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 15px;
+                                align-items: flex-start;
+                                width: 219px;
+                                padding: 0;
+                                // visibility: hidden;
+                                display: none;
+                                z-index: 1;
+
+
+                                .daily {
+                                    color: #212529;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    font-family: 'Poppins', sans-serif;
+                                    width: 100%;
+                                    border-bottom: 1px solid lightgray;
+                                    padding: 13px 21px 13px;
+                                    cursor: pointer;
+                                    transition: .3s ease-in-out;
+
+                                    &:hover {
+                                        color: #a6c76c;
+                                    }
+                                }
+
+                                li {
+                                    color: #666666;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    font-family: 'Poppins', sans-serif;
+                                    width: 100%;
+                                    border-bottom: 1px solid lightgray;
+                                    padding: 0px 21px 13px;
+                                    cursor: pointer;
+                                    transition: .3s ease-in-out;
+
+                                    &:hover {
+                                        color: #a6c76c;
+                                    }
+                                }
+
+                                .out {
+                                    color: #666666;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    font-family: 'Poppins', sans-serif;
+                                    width: 100%;
+                                    cursor: pointer;
+                                    transition: .3s ease-in-out;
+                                    padding: 0px 21px 13px;
+
+                                    &:hover {
+                                        color: #a6c76c;
+                                    }
+                                }
+                            }
+                        }
+
+                        .browse:hover {
+                            .browse-drop {
+                                // visibility: visible;
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .end-mid {
+
+                        padding-top: 4px;
+                        padding-left: 27px;
+
+                        .mid-ul {
+                            list-style: none;
+                            display: flex;
+                            align-items: baseline;
+                            justify-content: space-around;
+                            border-left: 2px solid darkgray;
+                            width: 649px;
+                            border-right: 2px solid darkgray;
+
+                            .home {
+                                color: #a6c76c;
+                                font-size: 15px;
+                                font-weight: 500;
+                                font-family: 'Poppins', sans-serif;
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
+                                cursor: pointer;
+                                position: relative;
+                                transition: .3s ease-in-out;
+
+                                i {
+                                    font-size: 11px;
+                                }
+
+                                .home-drop {
+                                    position: absolute;
+                                    top: 23px;
+                                    background-color: #fff;
+                                    box-shadow: 5px 10px 16px rgb(51 51 51 / 5%), -5px 10px 16px rgb(51 51 51 / 5%);
+                                    padding: 24px;
+                                    overflow: scroll;
+                                    left: -278px;
+                                    max-height: 298px;
+                                    overflow-x: overlay;
+                                    // visibility: hidden;
+                                    display: none;
+                                    z-index: 1;
+
+                                    .demo {
+                                        h4 {
+                                            color: #333;
+                                            font-weight: 400;
+                                            font-family: 'Poppins', sans-serif;
+                                            font-size: 15px;
+                                            letter-spacing: 2px;
+                                            text-transform: uppercase;
+                                        }
+                                    }
+                                }
+
+                                .fur-image {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    gap: 31px;
+
+                                    .image1 {
+                                        img {
+                                            width: 198px;
+                                            height: 163px;
+                                            object-fit: cover;
+                                            object-position: center;
+                                            border: 1px solid lightgray;
+                                        }
+
+                                        p {
+                                            text-align: center;
+                                            padding-top: 4px;
+                                            color: #777;
+                                            font-size: 14px;
+                                            font-weight: 300;
+                                            letter-spacing: 1.01px;
+                                            font-family: 'Poppins', sans-serif;
+                                        }
+                                    }
+                                }
+
+                                .fur-image1 {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    gap: 31px;
+                                    padding-top: 10px;
+
+                                    .image1 {
+                                        img {
+                                            width: 198px;
+                                            height: 163px;
+                                            object-fit: cover;
+                                            object-position: center;
+                                            border: 1px solid lightgray;
+                                        }
+
+                                        p {
+                                            text-align: center;
+                                            padding-top: 4px;
+                                            color: #777;
+                                            font-size: 14px;
+                                            font-weight: 300;
+                                            letter-spacing: 1.01px;
+                                            font-family: 'Poppins', sans-serif;
+                                        }
+                                    }
+                                }
+
+                                .demos-button {
+                                    text-align: center;
+                                    padding-top: 26px;
+
+                                    button {
+                                        border: 1px solid #a6c76c;
+                                        color: #a6c76c;
+                                        background: transparent;
+                                        padding: 8px 37px;
+                                        cursor: pointer;
+                                        transition: .3s ease-in-out;
+
+                                        &:hover {
+                                            background-color: #a6c76c;
+                                            color: #fff;
+                                            border: transparent;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .home:hover {
+                                .home-drop {
+                                    // visibility: visible;
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        li {
+                            color: #333;
+                            font-size: 15px;
+                            font-weight: 500;
+                            font-family: 'Poppins', sans-serif;
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            cursor: pointer;
+
+                            i {
+                                font-size: 11px;
+                            }
+                        }
+
+                        .elements {
+                            position: relative;
+
+                            .element-drop {
+                                position: absolute;
+                                  visibility: hidden;
+                                // display: none;
+                                top: 26px;
+                                background-color: #fff;
+                                box-shadow: 5px 10px 16px rgb(51 51 51 / 5%), -5px 10px 16px rgb(51 51 51 / 5%);
+                                padding: 0;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 9px;
+                                left: -21px;
+                                z-index: 1;
+
+                                .elem-li {
+                                    padding: 3px 11px;
+                                    width: 156px;
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 13px;
+                                    color: #777;
+                                    font-weight: 400;
+                                    transition: .3s ease-in-out;
+
+                                    &:hover {
+                                        color: #a6c76c;
+                                    }
+                                }
+                            }
+                        }
+
+                        .elements:hover {
+                            .element-drop {
+                             visibility: visible;
+                                
+                            }
+                        }
+
+                        .blog {
+                            position: relative;
+
+                            .blog-ul {
+                                position: absolute;
+                                top: 30px;
+                                left: -15px;
+                                background-color: #fff;
+                                box-shadow: 5px 10px 16px rgb(51 51 51 / 5%), -5px 10px 16px rgb(51 51 51 / 5%);
+                                padding: 0;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 4px;
+                                width: 201px;
+                                visibility: hidden;
+                                z-index: 1;
+
+                                .blog-li {
+                                    padding: 3px 17px;
+                                    width: 134px;
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    font-style: normal;
+                                    color: #777;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 9px;
+                                    cursor: pointer;
+                                    transition: .3s ease-in-out;
+
+                                    &:hover {
+                                        color: #a6c76c;
+                                    }
+
+                                    i {
+                                        font-size: 9px;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+
+                        .blog:hover {
+                            .blog-ul {
+                                visibility: visible;
+                            }
+                        }
+
+                        .pages {
+                            position: relative;
+
+
+                            .pages-ul {
+                                position: absolute;
+                                top: 22px;
+                                left: -24px;
+                                background-color: #fff;
+                                box-shadow: 5px 10px 16px rgb(51 51 51 / 5%), -5px 10px 16px rgb(51 51 51 / 5%);
+                                padding: 0;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 3px;
+                                width: 133px;
+                                visibility: hidden;
+                                transition: .3s ease-in-out;
+                                z-index: 1;
+
+                                .pages-li {
+                                    padding: 2px 11px;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    color: #777;
+                                    font-style: normal;
+                                    transition: .3s ease-in-out;
+
+                                    &:hover {
+                                        color: #a6c76c;
+                                    }
+                                }
+                            }
+                        }
+
+                        .pages:hover {
+                            .pages-ul {
+                                visibility: visible;
+                            }
+                        }
+
+                        .product {
+                            position: relative;
+
+                            .prd-row {
+                                position: absolute;
+                                top: 32px;
+                                background-color: #fff;
+                                box-shadow: 5px 10px 16px rgb(51 51 51 / 5%), -5px 10px 16px rgb(51 51 51 / 5%);
+                                display: flex;
+                                align-items: flex-start;
+                                width: 453px;
+                                justify-content: space-between;
+                                left: 1px;
+                                visibility: hidden;
+                                z-index: 1;
+
+                                .prd-text {
+                                    padding: 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 6px;
+                                    margin: 30px;
+
+                                    li {
+                                        color: #777;
+                                        font-size: 13px;
+                                        font-weight: 400;
+                                        font-style: normal;
+                                        transition: .3s ease-in-out;
+
+                                        &:hover {
+                                            color: #a6c76c;
+                                        }
+                                    }
+
+                                    .detal {
+                                        color: #333;
+                                        font-weight: 400;
+                                        font-size: 15px;
+                                        font-style: normal;
+                                        // padding: 10px 22px;
+                                    }
+
+                                    .extend {
+                                        color: #777;
+                                        font-size: 13px;
+                                        font-weight: 400;
+                                        font-style: normal;
+                                        cursor: pointer;
+                                        transition: .3s ease-in-out;
+                                        position: relative;
+
+                                        &:hover {
+                                            color: #a6c76c;
+                                        }
+
+                                        p {
+                                            position: absolute;
+                                            right: 12px;
+                                            font-size: 10px;
+                                            line-height: 1;
+                                            padding: 1px;
+                                            color: #fff;
+                                            background: #a6c76c;
+                                        }
+                                    }
+                                }
+
+                                .trend {
+                                    position: relative;
+
+                                    img {
+                                        width: 100%;
+                                        object-fit: cover;
+                                        object-position: center;
+                                    }
+
+                                    .trend-over {
+                                        position: absolute;
+                                        bottom: 21px;
+                                        left: 30px;
+
+                                        p {
+                                            margin-bottom: 0;
+                                            color: #fff;
+                                            font-family: 'Poppins', sans-serif;
+                                            font-size: 21px;
+                                            font-weight: 400;
+                                            font-style: normal;
+                                            text-transform: uppercase;
+                                        }
+
+                                        span {
+                                            color: #fff;
+                                            font-size: 23px;
+                                            font-weight: 600;
+                                            text-transform: uppercase;
+                                            font-style: normal;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                        .product:hover{
+                            .prd-row{
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .light {
+                display: flex;
+                align-items: baseline;
+                justify-content: center;
+                gap: 8px;
+                padding-top: 2px;
+
+                img {
+                    width: 17px;
+                    height: 17px;
+                    object-fit: contain;
+                    object-position: center;
+                }
+
+                p {
+                    color: #777;
+                    font-size: 15px;
+                    font-weight: 400;
+                    font-family: 'Poppins', sans-serif;
+
+                    span {
+                        color: #333;
+                        font-size: 15px;
+                        font-weight: 400;
+                        font-family: 'Poppins', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
